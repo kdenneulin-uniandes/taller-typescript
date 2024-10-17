@@ -1,16 +1,18 @@
 import { Serie } from './Serie.js';
 import { series } from './data.js';
 
-const tableBody = document.getElementById('contenidoTabla') as HTMLTableSectionElement;
+let tableBody: HTMLElement = document.getElementById('contenidoTabla')! ;;
 
-function loadSeriesData(): void {
+renderSeriesInTable(series);
+
+function renderSeriesInTable(serie: Serie[]): void {
   series.forEach((serie: Serie) => {
-    const row = document.createElement('tr');
+    let row = document.createElement('tr');
     row.innerHTML = `
       <td>${serie.getId()}</td>
-      <td>${serie.getName}</td>
-      <td>${serie.getChannel}</td>
-      <td>${serie.getSeasons}</td>
+      <td>${serie.getName()}</td>
+      <td>${serie.getChannel()}</td>
+      <td>${serie.getSeasons()}</td>
     `;
     tableBody.appendChild(row);
   });
@@ -18,8 +20,7 @@ function loadSeriesData(): void {
   console.log(`${tableBody.innerHTML}`); 
 }
 
-loadSeriesData; 
+// loadSeriesData; 
 
-document.getElementsByTagName("tbody")[0].innerHTML = tableBody.innerHTML;
+// document.getElementsByTagName("tbody")[0].innerHTML = tableBody.innerHTML;
 
-// window.onload = loadSeriesData;
