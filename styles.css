@@ -32,6 +32,7 @@ a {
         
 .entete {
     background-color: white; 
+    border-top: 1px solid #ECECEC  ;
 }
         
 #contenidoTabla {
