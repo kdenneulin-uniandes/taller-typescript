@@ -1,0 +1,53 @@
+.navbar {
+    background-color: #4FA0B5;
+    color: black;
+    font-size: 18pt;
+}
+
+#alaide {
+    display: flex ;
+    justify-content: flex-start ;
+    align-items: center;
+}
+
+a {
+    color: #4E83C7 ; 
+    text-decoration: none;
+}
+
+
+.container-fluid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+}
+.container {
+    margin-top: 50px;
+}
+
+.table {
+    width: 50%; 
+}
+        
+.entete {
+    background-color: white; 
+}
+        
+#contenidoTabla {
+    background-color: #F2F2F2; 
+}
+
+.max-width-image {
+    max-width: 3%; 
+    height: auto; 
+    margin-right: 1%; 
+}
+
+tbody td:first-child, th:first-child {
+    font-weight: bold;
+}
+
+tfoot td {
+    border-bottom: none;
+}
