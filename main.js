@@ -15,8 +15,6 @@ function renderSeriesInTable(serie) {
       <td>${serie.getSeasons()}</td>
     `;
         tableBody.appendChild(row);
-        // let box = document.getElementById("bouton")!;
-        // box.addEventListener("click", (e:Event) => afficheCard(e));
     });
     let links = document.getElementsByClassName('bouton');
     Array.from(links).forEach(link => {
@@ -34,8 +32,6 @@ function getAverageSeasons(series) {
     average = totalSeasons / series.length;
     return average;
 }
-// document.addEventListener('DOMContentLoaded', () => {
-// const myCard = document.getElementById('card');
 export function afficheCard(e) {
     let serie = series[0];
     let optionId = e.target.getAttribute('data-id');
@@ -59,15 +55,6 @@ export function afficheCard(e) {
     ${serie.getUrl()}
   </a>
   </div>`;
-    // div.innerHTML = optionId!;  
-    // myCard.appendChild(div); 
-    // if (linkCard && myCard) {
-    // Ajoute un gestionnaire d'événement pour le clic sur le lien
-    // linkCard.addEventListener('click', (event) => {
-    // event.preventDefault(); // Empêche le comportement par défaut du lien
-    // Affiche la carte en modifiant son style
     myCard.style.display = "block";
-    //});
-    // }
 }
 ;
