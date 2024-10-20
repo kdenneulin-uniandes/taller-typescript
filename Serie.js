@@ -23,4 +23,10 @@ export class Serie {
     getUrl() {
         return `${this.url}`;
     }
+    getPhoto() {
+        return `${this.photo}`;
+    }
+    getDescription() {
+        return `${this.descripcion}`;
+    }
 }

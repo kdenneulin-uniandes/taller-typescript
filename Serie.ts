@@ -39,5 +39,13 @@ export class Serie {
         return `${this.url}`;
     }
 
+    getPhoto(): string {
+        return `${this.photo}`;
+    }
+
+    getDescription(): string {
+        return `${this.descripcion}`; 
+    }
+
   }
   
